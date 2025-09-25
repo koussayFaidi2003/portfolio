@@ -1,6 +1,6 @@
 [
-  { "name": "Projet C++", "folder": "projet c++" },
-  { "name": "Game with C", "folder": "game with c" },
-  { "name": "Projet Cloud+BI", "folder": "projet cloud+bi" },
-  { "name": "Projet PHP", "folder": "projet php" }
+  { "name": "Projet C++", "folder": "https://github.com/username/portfolio/tree/main/projet%20c++" },
+  { "name": "Game with C", "folder": "https://github.com/username/portfolio/tree/main/game%20with%20c" },
+  { "name": "Projet Cloud+BI", "folder": "https://github.com/username/portfolio/tree/main/projet%20cloud+bi" },
+  { "name": "Projet PHP", "folder": "https://github.com/username/portfolio/tree/main/projet%20php" }
 ]

@@ -24,7 +24,7 @@
         projects.forEach(p => {
           const li = document.createElement('li');
           const link = document.createElement('a');
-          link.href = encodeURI(p.folder + '/index.html'); // encode spaces and special chars
+          link.href = p.folder; // now points to GitHub folder, not /index.html
           link.textContent = p.name;
           li.appendChild(link);
           ul.appendChild(li);
