@@ -1,0 +1,2 @@
+Neighbor ID     Pri   State           Dead Time   Address         Interface
+3.3.3.3           1   EXSTART/DR      00:00:38    192.168.150.202 FastEthernet4/0

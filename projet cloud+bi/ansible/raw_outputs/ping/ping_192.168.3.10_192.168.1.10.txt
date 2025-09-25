@@ -1,0 +1,2 @@
+Loss: 0%
+Avg latency: 18.531 ms

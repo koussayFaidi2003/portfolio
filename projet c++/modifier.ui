@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Modifier</class>
+ <widget class="QDialog" name="Modifier">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>878</width>
+    <height>617</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QPushButton{
+background:white;
+border-radius:22px;
+border: 1.5px solid skyblue;
+color:skyblue;
+font: 63 8pt &quot;Cascadia Code SemiBold&quot;;
+}
+QLineEdit{
+background:white;
+border-radius:10px;
+border:0.5px solid lightblue;
+
+}
+
+QLabel{
+font: 63 10pt &quot;Cascadia Code SemiBold&quot;;
+font-weight: 1000;
+color:white;
+border-radius:10px;
+}
+QDateEdit{
+background:white;
+border-radius:10px;
+border:0.5px solid lightblue;
+}
+QDialog{
+background:lightblue;
+}
+QComboBox{
+background:lightblue;
+border:0.5px solid white;
+border-radius:10px;
+}
+QComboBox::drop-down{
+width:20;
+}
+QPushButton:hover
+{
+background-color:lightblue;
+color:black;
+}
+QTabWidget::pane{
+border: 1px solid skyblue;
+top:-1px;
+}
+QTabBar::tab{
+border:2px solid skyblue;
+font: 63 8pt &quot;Cascadia Code SemiBold&quot;;
+border-radius:5px;
+padding:15px;
+width:200;
+}
+QTabBar::tab:selected{
+background:lightblue;
+margin-bottom:-1px;
+}
+QTableView{
+gridline-color:black;
+border-color:skyblue;
+font:10px;
+background:lightblue;
+}
+QHeaderView::section{
+background: grey;
+color:white;
+}
+</string>
+  </property>
+  <widget class="QLineEdit" name="lineEditTel_Mod">
+   <property name="geometry">
+    <rect>
+     <x>450</x>
+     <y>150</y>
+     <width>241</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:black;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_14">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>99</y>
+     <width>221</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:white;
+border:none;
+font-size:20px;</string>
+   </property>
+   <property name="text">
+    <string>Nom</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_Ajouter_Mod">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>439</y>
+     <width>101</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius:20px;
+background:white;</string>
+   </property>
+   <property name="text">
+    <string>Modifier</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_17">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>208</y>
+     <width>221</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:white;
+border:none;
+font-size:20px;</string>
+   </property>
+   <property name="text">
+    <string>Prénom</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_12">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>328</y>
+     <width>231</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:white;
+border:none;
+font-size:20px;</string>
+   </property>
+   <property name="text">
+    <string>Type de Reeducation</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEditAdress_Mod">
+   <property name="geometry">
+    <rect>
+     <x>450</x>
+     <y>259</y>
+     <width>241</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:black;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_15">
+   <property name="geometry">
+    <rect>
+     <x>450</x>
+     <y>328</y>
+     <width>361</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:white;
+border:none;
+font-size:20px;</string>
+   </property>
+   <property name="text">
+    <string>Date de Naissance</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_16">
+   <property name="geometry">
+    <rect>
+     <x>450</x>
+     <y>208</y>
+     <width>381</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:white;
+border:none;
+font-size:20px;</string>
+   </property>
+   <property name="text">
+    <string>Adresse</string>
+   </property>
+  </widget>
+  <widget class="QDateEdit" name="dateEditDateN_Mod">
+   <property name="geometry">
+    <rect>
+     <x>450</x>
+     <y>379</y>
+     <width>241</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">padding-left:70px;
+font: 9pt &quot;Segoe UI Historic&quot;;
+color:black;
+</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEditPrenom_Mod">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>259</y>
+     <width>231</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:black;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_13">
+   <property name="geometry">
+    <rect>
+     <x>450</x>
+     <y>99</y>
+     <width>371</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:white;
+border:none;
+font-size:20px;</string>
+   </property>
+   <property name="text">
+    <string>Telephone</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEditTypeRed_Mod">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>379</y>
+     <width>231</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:black;</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEditNom_Mod">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>150</y>
+     <width>231</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:black;</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

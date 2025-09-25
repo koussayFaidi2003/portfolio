@@ -1,0 +1,18 @@
+- name: Collecte OSPF neighbors
+  hosts: routers
+  gather_facts: no
+  collections:
+    - cisco.ios
+  tasks:
+    - name: show ip ospf neighbor
+      ios_command:
+        commands:
+          - show ip ospf neighbor
+      register: ospf_out
+
+    - name: Save raw output
+      copy:
+        content: "{{ ospf_out.stdout[0] }}"
+        dest: "raw_outputs/ospf/{{ inventory_hostname }}_ospf.txt"
+      delegate_to: localhost
+

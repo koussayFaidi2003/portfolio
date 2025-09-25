@@ -1,0 +1,14 @@
+----------------------***-----------------------<br>
+
+<b style='font-size: 14px; color: #00008B;'>Historique d'ajout :</b><br> 
+<br>[ sam. avr. 27 18:37:49 ]-   Un nouveau Equipement a été ajouté dans la table Equipement avec le code:  <span style='color: red; font-weight: bold; font-style: italic;'> 
+<b>70507050</b><br>
+</span>
+
+----------------------***-----------------------<br>
+
+<b style='font-size: 14px; color: #00008B;'>Historique de Suppression :</b><br> 
+<br>[ sam. avr. 27 18:37:59 ]-   Un nouveau Equipement a été supprimé de la table Equipement avec le code:  <span style='color: red; font-weight: bold; font-style: italic;'> 
+<b>70507050</b><br>
+</span>
+
