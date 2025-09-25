@@ -4,40 +4,35 @@
   <meta charset="UTF-8">
   <title>My Portfolio</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      max-width: 800px;
-      margin: 50px auto;
-      padding: 0 20px;
-    }
-    h1 {
-      text-align: center;
-      color: #333;
-    }
-    ul {
-      list-style-type: none;
-      padding: 0;
-    }
-    li {
-      margin: 15px 0;
-    }
-    a {
-      text-decoration: none;
-      color: #1a73e8;
-      font-size: 18px;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
+    body { font-family: Arial, sans-serif; max-width: 800px; margin: 50px auto; padding: 0 20px; }
+    h1 { text-align: center; color: #333; }
+    ul { list-style-type: none; padding: 0; }
+    li { margin: 15px 0; }
+    a { text-decoration: none; color: #1a73e8; font-size: 18px; }
+    a:hover { text-decoration: underline; }
   </style>
 </head>
 <body>
   <h1>My Portfolio</h1>
-  <ul>
-    <li><a href="projet%20c++/index.html">Projet C++</a></li>
-    <li><a href="game%20with%20c/index.html">Game with C</a></li>
-    <li><a href="projet%20cloud+bi/index.html">Projet Cloud+BI</a></li>
-    <li><a href="projet%20php/index.html">Projet PHP</a></li>
-  </ul>
+  <ul id="projects-list"></ul>
+
+  <script>
+    fetch('projects.json')
+      .then(response => response.json())
+      .then(projects => {
+        const ul = document.getElementById('projects-list');
+        projects.forEach(p => {
+          const li = document.createElement('li');
+          const link = document.createElement('a');
+          link.href = encodeURI(p.folder + '/index.html'); // encode spaces and special chars
+          link.textContent = p.name;
+          li.appendChild(link);
+          ul.appendChild(li);
+        });
+      })
+      .catch(err => {
+        console.error('Could not load projects.json:', err);
+      });
+  </script>
 </body>
 </html>
